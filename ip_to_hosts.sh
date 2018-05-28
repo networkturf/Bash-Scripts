@@ -1,5 +1,5 @@
 #!/bin/sh
-cat ip_list.sh | while read LINE
+cat ip_list.txt | while read LINE
 do
 host $LINE | awk '{print $5}' | sed 's/.$//'
 done
